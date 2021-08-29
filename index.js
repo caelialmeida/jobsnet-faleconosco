@@ -2,7 +2,7 @@ module.exports = (async function () {
   const express = require("express");
 
   const app = express();
-  const port = 3333;
+  const port = 3333 || process.env.port;
 
   app.use(express.json());
   app.engine('html', require("ejs").renderFile);
