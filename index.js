@@ -24,7 +24,14 @@ module.exports = (async function () {
       bancodedados.push(formulario);
       res.render ("./sucesso.html");
     }
+  });
+
+  app.get("/formulario", function(req, res){
+    res.json({
+      bancodedados
+    })
   })
+
   app.listen(port, function () {
     console.log("Servidor está funcionando!");
   });
