@@ -173,6 +173,10 @@
             border: 1px solid #cce6ff;
             background-color: #b3d9ff;
         }
+        ul {
+        display: flex;
+        justify-content: space-around;
+    }
     </style>
 </head>
 
@@ -184,7 +188,9 @@
         <li> <a href="#">Trabalhe conosco</a></li>
     </ul>
     <hr />
-    <h2 style="margin-bottom: 0.75em; margin-top: 0.75em;">Dados pessoais</h2>
+    <div style="display: flex; justify-content: center;">
+        <h2 style="margin-bottom: 0.75em; margin-top: 0.75em;">Dados pessoais</h2>
+    </div>
     <hr style="margin-bottom: 0.75em" />
     <form action="/formulario" method="post">
         <div class="campo">
@@ -329,8 +335,10 @@
                 <input type="email" id="email" required />
             </div>
         </fieldset>
-        <hr style="margin-bottom: 0.75em; margin-top: 0.75em;" />
-        <h2 style="margin-bottom: 0.75em">Documentos pessoais</h2>
+        <hr style="margin-bottom: 0.75em; margin-top: 0.75em;"/>
+        <div style="display: flex; justify-content: center;">
+            <h2 style="margin-bottom: 0.75em; margin-top: 0.75em;">Documentos pessoais</h2>
+        </div>
         <hr style="margin-bottom: 0.75em" />
         <div class="campo">
             <label for="identidade">Identidade:<small>(Opcional)</small></label>
